@@ -1,0 +1,52 @@
+.blog {
+  padding: 3rem;
+  .posts {
+    display: flex;
+    flex-flow: column;
+    gap: 5rem;
+    width: 60%;
+    margin: 0 auto;
+
+    .post {
+      display: flex;
+      flex-flow: column;
+
+      h2 {
+        color: $blue;
+      }
+
+      .post-body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        // grid-template-rows: auto auto;
+        grid-template-areas: "img paragraph";
+        justify-content: center;
+        align-items: center;
+        background: orange;
+
+        h2 {
+          color: $blue;
+          grid-area: heading;
+        }
+
+        img {
+          display: inline-block;
+          // width: 100%;
+          // max-width: 100%;
+          width: 5rem;
+          height: auto;
+          grid-area: img;
+        }
+        p {
+          grid-area: paragraph;
+          padding: 1rem 0 1rem 3rem;
+          color: #666;
+          background: pink;
+        }
+        p:not(:first-of-type) {
+          display: none;
+        }
+      }
+    }
+  }
+}

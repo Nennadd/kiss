@@ -1,0 +1,71 @@
+.gallery {
+  //   padding: 10rem 3rem 3rem;
+
+  .bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("../assets/images/about-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h1 {
+      text-align: center;
+      font-size: 5rem;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-top: 10rem;
+    }
+  }
+
+  .gallery-box {
+    min-height: 100vh;
+    background-color: #fff;
+    padding: 2rem 5rem;
+
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 2vmin;
+    grid-auto-flow: dense;
+    // grid-template-rows: repeat(7, 30vh);
+
+    div {
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        filter: grayscale(0);
+        transition: all 0.3s linear;
+
+        &:hover {
+          transform: scale(1.1);
+          filter: grayscale(90%);
+          cursor: pointer;
+        }
+      }
+    }
+
+    div:nth-child(1) {
+      grid-column-start: span 2;
+      grid-row-start: span 2;
+    }
+    // div:nth-child(6) {
+    //   grid-column-start: span 2;
+    //   grid-row-start: span 2;
+    // }
+    // div:nth-child(7) {
+    //   grid-column-start: span 2;
+    //   grid-row-start: span 2;
+    // }
+  }
+}

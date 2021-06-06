@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiss Dental - Services</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- NOTE NAVIGATION !!! -->
+    <nav ref="nav">
+      <div class="logo">
+        <img src="./assets/svg/kiss-dental-logo.svg" alt="logo" />
+      </div>
+      <div class="phone">
+        <div class="row">
+          <div>
+            <img src="./assets/svg/phone-icon.svg" alt="phone-icon" />
+          </div>
+          <div>
+            <p>(773) 465 2600</p>
+            <p>773 465 2600</p>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <img src="./assets/svg/location-icon.svg" alt="phone-icon" />
+          </div>
+          <div>
+            <p>2925 W TOUHY AVE</p>
+            <p>CHICAGO, IL 60645</p>
+          </div>
+        </div>
+      </div>
+      <div class="book">
+        <p>Book an appointment</p>
+        <img src="./assets/svg/book-1-icon.svg" alt="book-icon" />
+      </div>
+      <div class="menu">
+        <div class="text">
+          <span>Menu</span>
+        </div>
+        <div class="bars">
+          <img src="./assets/svg/menu-icon.svg" alt="menu-icon" />
+        </div>
+      </div>
+    </nav>
+    <!-- NOTE NAVBAR MODAL !!! -->
+    <div class="navbar-modal">
+      <div class="close-menu">
+        <img src="./assets/svg/menu-icon.svg" alt="menu-icon" />
+      </div>
+      <div class="col col1">
+        <div>
+          <img src="./assets/svg/kiss-dental-logo.svg" alt="logo" />
+        </div>
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col col2">
+        <div></div>
+        <div>
+          <ul>
+            <li><a href="#">Deep Cleaning</a></li>
+            <li><a href="#">Esthetic Restorations</a></li>
+            <li><a href="#">Teeth Whitening</a></li>
+            <li><a href="#">Crowns and Bridges</a></li>
+            <li><a href="#">Partial Dentures</a></li>
+            <li><a href="#">Root Canals</a></li>
+            <li><a href="#">Extractions</a></li>
+            <li><a href="#">Digital X-RAYS</a></li>
+            <li><a href="#">Implants</a></li>
+            <li><a href="#">Invisalign</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col col3">
+        <div>
+          <a class="book" href="#">
+            <img src="./assets/svg/book-1-icon.svg" alt="book-icon" />
+            <span>Book an appointment</span>
+          </a>
+        </div>
+        <div>
+          <div>
+            <img src="./assets/svg/phone-icon.svg" alt="phone-icon" />
+            <span>773 465 2600</span>
+          </div>
+          <div>
+            <img src="./assets/svg/mail-icon.svg" alt="phone-icon" />
+            <span>kissdentalpc@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="our-services">
+      <div class="container">
+        <div class="nav">
+          <ul>
+            <li>
+              <span onclick="service(0)">
+                <img
+                  class="img1"
+                  src="./assets/svg/deep-cleaning-1.svg"
+                  alt="icon"
+                />
+                <img
+                  class="img2"
+                  src="./assets/svg/deep-cleaning-2.svg"
+                  alt="icon"
+                />
+              </span>
+            </li>
+            <li>
+              <span onclick="service(1)">
+                <img
+                  class="img1"
+                  src="./assets/svg/esthetic-restorations-1.svg"
+                  alt="icon"
+                />
+                <img
+                  class="img2"
+                  src="./assets/svg/esthetic-restorations-2.svg"
+                  alt="icon"
+                />
+              </span>
+            </li>
+
+            <li>
+              <span onclick="service(2)">
+                <img
+                  class="img1"
+                  src="./assets/svg/teeth-whitening-1.svg"
+                  alt="icon"
+                />
+                <img
+                  class="img2"
+                  src="./assets/svg/teeth-whitening-2.svg"
+                  alt="icon"
+                />
+              </span>
+            </li>
+            <li>
+              <span onclick="service(3)">
+                <img
+                  class="img1"
+                  src="./assets/svg/crowns-bridges-1.svg"
+                  alt="icon"
+                />
+                <img
+                  class="img2"
+                  src="./assets/svg/crowns-bridges-2.svg"
+                  alt="icon"
+                />
+              </span>
+            </li>
+            <li>
+              <span onclick="service(4)">
+                <img
+                  class="img1"
+                  src="./assets/svg/full-partial-dentures-1.svg"
+                  alt="icon"
+                />
+                <img
+                  class="img2"
+                  src="./assets/svg/full-partial-dentures-2.svg"
+                  alt="icon"
+                />
+              </span>
+            </li>
+            <li>
+              <span onclick="service(5)">
+                <img
+                  class="img1"
+                  src="./assets/svg/root-canals-1.svg"
+                  alt="icon"
+                />
+                <img
+                  class="img2"
+                  src="./assets/svg/root-canals-2.svg"
+                  alt="icon"
+                />
+              </span>
+            </li>
+            <li>
+              <span onclick="service(6)">
+                <img
+                  class="img1"
+                  src="./assets/svg/extractions-1.svg"
+                  alt="icon"
+                />
+                <img
+                  class="img2"
+                  src="./assets/svg/extractions-2.svg"
+                  alt="icon"
+                />
+              </span>
+            </li>
+            <li>
+              <span onclick="service(7)">
+                <img
+                  class="img1"
+                  src="./assets/svg/digital-xrays-1.svg"
+                  alt="icon"
+                />
+                <img
+                  class="img2"
+                  src="./assets/svg/digital-xrays-2.svg"
+                  alt="icon"
+                />
+              </span>
+            </li>
+            <li>
+              <span onclick="service(8)">
+                <img
+                  class="img1"
+                  src="./assets/svg/implants-1.svg"
+                  alt="icon"
+                />
+                <img
+                  class="img2"
+                  src="./assets/svg/implants-2.svg"
+                  alt="icon"
+                />
+              </span>
+            </li>
+            <li>
+              <span onclick="service(9)">
+                <img
+                  class="img1"
+                  src="./assets/svg/invisalign-1.svg"
+                  alt="icon"
+                />
+                <img
+                  class="img2"
+                  src="./assets/svg/invisalign-2.svg"
+                  alt="icon"
+                />
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="service-section">
+      <div class="service-container">
+        <div>
+          <h2>Deep Cleaning</h2>
+          <p>
+            We perform deep cleaning procedure that is by far the best way to
+            treat your gums in case of a disease or inflammation. The purpose of
+            this procedure is to get rid of dental calculus located in between
+            the very tooth root and your gums causing them harm.
+          </p>
+        </div>
+        <div class="img">
+          <img src="./assets/images/implant.jpg" alt="implant" />
+        </div>
+      </div>
+      <div class="service-container">
+        <div>
+          <h2>Esthetic Restorations</h2>
+          <p>
+            Esthetic restorations are aimed to fix faulty teeth, teeth that have
+            been injured or restore missing teeth thus making them look
+            flawlessly. Regardless of whether you need to have your teeth
+            repaired or reshaped, this procedure will contribute to your healthy
+            radiant smile that will sweep anyone off their feet.
+          </p>
+        </div>
+        <div class="img">
+          <img src="./assets/images/invisalign.jpg" alt="implant" />
+        </div>
+      </div>
+      <div class="service-container">
+        <div>
+          <h2>Teeth Whitening</h2>
+          <p>
+            Our job is to make sure your teeth are healthy and pearly white.
+            That’s why we pay close attention to offering you a wide range of
+            white nuances. Our goal is to make your smile shine. Let’s not
+            forget choosing the one that meets your needs contributes to
+            skyrocketing self-confidence.
+          </p>
+        </div>
+        <div class="img">
+          <img src="./assets/images/implant.jpg" alt="implant" />
+        </div>
+      </div>
+      <div class="service-container">
+        <div>
+          <h2>Crowns and Bridges</h2>
+          <p>
+            A missing tooth is no longer a nightmare! With our assistance, you
+            can have a brand-new stunning ivory white tooth by attaching a
+            dental bridge to imitate it. A tooth that has suffered trauma or has
+            been severely damaged can be easily repaired by putting a crown.
+            Make your smile perfect.
+          </p>
+        </div>
+        <div class="img">
+          <img src="./assets/images/implant.jpg" alt="implant" />
+        </div>
+      </div>
+      <div class="service-container">
+        <div>
+          <h2>Full and Partial Dentures</h2>
+          <p>
+            If your tooth or part of it is missing, we will handle it with the
+            utmost care. Our solution is using full and partial dentures that
+            will adequately replace it. We can also provide help if a few teeth
+            are missing. Give your bright smile a chance by trusting us!
+          </p>
+        </div>
+        <div class="img">
+          <img src="./assets/images/implant.jpg" alt="implant" />
+        </div>
+      </div>
+      <div class="service-container">
+        <div>
+          <h2>Root Canals</h2>
+          <p>
+            If your tooth got infected, don’t worry! We will treat it by
+            removing the infected part of a pulp tissue as well as the nerve
+            after which we will cure the root canal. We will make sure it’s
+            clean and shaped prior to filling it and adding a sealing substance.
+          </p>
+        </div>
+        <div class="img">
+          <img src="./assets/images/implant.jpg" alt="implant" />
+        </div>
+      </div>
+      <div class="service-container">
+        <div>
+          <h2>Extractions</h2>
+          <p>
+            Many people are terrified of the mere thought of needing to have
+            their teeth removed. Our experience, however, guarantees a minimum
+            amount of pain and absolute dedication to your comfort and
+            well-being. Unpleasant as it is, our team will ensure you are going
+            to be taken care of properly.
+          </p>
+        </div>
+        <div class="img">
+          <img src="./assets/images/implant.jpg" alt="implant" />
+        </div>
+      </div>
+      <div class="service-container">
+        <div>
+          <h2>Digital X-Rays</h2>
+          <p>
+            We provide a service such as digital X-rays. Its purpose is to
+            enable us to get an insight into the overall condition of your teeth
+            and establish if any medical treatment or procedure is required.
+            This way we can detect a potential problem and alert you before it’s
+            too late.
+          </p>
+        </div>
+        <div class="img">
+          <img src="./assets/images/implant.jpg" alt="implant" />
+        </div>
+      </div>
+      <div class="service-container">
+        <div>
+          <h2>Implants</h2>
+          <p>
+            Implants provide steady support for replacement teeth that can be
+            both removable and fixed. A durable basis is crucial as the
+            replacement ones imitate your own teeth. Implants improve your
+            self-esteem and dental health in the long run. Additionally, they
+            positively affect your pronunciation if they are firmly attached.
+          </p>
+        </div>
+        <div class="img">
+          <img src="./assets/images/implant.jpg" alt="implant" />
+        </div>
+      </div>
+      <div class="service-container">
+        <div>
+          <h2>Invisalign</h2>
+          <p>
+            Invisalign treatment is our recommended way of changing the position
+            of teeth step by step. The main function of this treatment is to use
+            a special mold that modifies teeth in such a way so as to place them
+            in a perfect position. Moreover, it also has a corrective function.
+          </p>
+        </div>
+        <div class="img">
+          <img src="./assets/images/implant.jpg" alt="implant" />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          quidem voluptate obcaecati magnam quas a, labore perspiciatis sunt
+          debitis nihil autem consectetur hic odio quibusdam quos dolor
+          perferendis! Error nulla dolor cumque mollitia ipsam ad necessitatibus
+          tempore nobis! Ea non aperiam labore architecto.
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script type="module" src="./js/app.js"></script>
+    <script>
+      const service = (value) => {
+        document.querySelector(".service-container").style.marginLeft =
+          "-" + value * 100 + "vw";
+      };
+    </script>
+  </body>
+</html>

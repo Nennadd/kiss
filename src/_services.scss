@@ -1,0 +1,267 @@
+.services-container {
+  background-color: pink;
+  padding: 5rem 5rem 2rem;
+  z-index: 9999;
+
+  h2 {
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    color: $blue;
+  }
+  .services {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    gap: 5rem;
+    margin-top: 3rem;
+    opacity: 0;
+    background-color: #fff;
+    transform: translateY(100px);
+
+    .service {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 80% 20%;
+      flex-flow: column;
+      justify-content: space-between;
+      text-align: center;
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .service div:first-child {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .service div img {
+      width: 65%;
+      max-width: 65%;
+      height: auto;
+    }
+    .service div p {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #666;
+    }
+  }
+
+  .section2 {
+    margin-top: 10rem;
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      align-items: center;
+      gap: 1rem;
+      width: 60%;
+      margin: 8rem auto;
+    }
+
+    .row:nth-child(1) div:first-child,
+    .row:nth-child(2) div:last-child,
+    .row:nth-child(3) div:first-child,
+    .row:nth-child(4) div:last-child {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem 2rem;
+    }
+    .row:nth-child(1) div:last-child,
+    .row:nth-child(2) div:first-child,
+    .row:nth-child(3) div:last-child,
+    .row:nth-child(4) div:first-child {
+      width: 85%;
+      overflow: hidden;
+    }
+    .row div h2 {
+      text-align: left;
+    }
+    .row div p {
+      text-transform: uppercase;
+      color: #555;
+      line-height: 1.4rem;
+    }
+
+    .row div img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      transition: all 0.3s linear;
+    }
+    .row div img:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .see-more {
+    display: block;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-decoration: none;
+    text-align: center;
+    color: $blue;
+  }
+  .left,
+  .left2,
+  .left3,
+  .left4 {
+    transform: translateX(-5rem);
+    opacity: 0.5;
+  }
+  .right,
+  .right2,
+  .right3,
+  .right4 {
+    transform: translateX(5rem);
+    opacity: 0.5;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .services-container {
+    .services {
+      width: 85%;
+      gap: 4rem;
+
+      .service div p {
+        font-size: 0.8rem;
+      }
+    }
+
+    .section2 {
+      .row {
+        width: 60%;
+      }
+      .row div h2 {
+        font-size: 1.7rem;
+      }
+      .row div p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1600px) {
+  .services-container {
+    .services {
+      .service div p {
+        font-size: 0.8rem;
+      }
+    }
+    .section2 {
+      .row {
+        width: 70%;
+      }
+      .row div h2 {
+        font-size: 1.7rem;
+      }
+      .row div p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  .services-container {
+    .services {
+      width: 95%;
+      margin: 0 auto;
+      gap: 3rem;
+
+      .service div p {
+        font-size: 0.8rem;
+      }
+    }
+
+    .section2 {
+      .row {
+        width: 80%;
+      }
+      .row div h2 {
+        font-size: 2.3rem;
+      }
+      .row div p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .services-container {
+    .services {
+      grid-template-columns: repeat(3, 0.5fr);
+      width: 95%;
+      margin: 2rem auto;
+      gap: 3rem;
+
+      .service div p {
+        font-size: 0.8rem;
+      }
+      .service div img {
+        width: 50%;
+        max-width: 50%;
+        height: auto;
+      }
+    }
+
+    .section2 {
+      .row {
+        width: 90%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .services-container {
+    .services {
+      grid-template-columns: repeat(2, 0.5fr);
+      margin: 2rem 0;
+
+      .service div p {
+        font-size: 1rem;
+      }
+      .service div img {
+        width: 50%;
+        max-width: 50%;
+        height: auto;
+      }
+    }
+
+    .section2 {
+      .row {
+        width: 100%;
+      }
+      .row div h2 {
+        font-size: 1.8rem;
+      }
+      .row div p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .services-container {
+    .services {
+      .section2 {
+        .row {
+          width: 100%;
+        }
+        .row div h2 {
+          font-size: 1.5rem;
+        }
+        .row div p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

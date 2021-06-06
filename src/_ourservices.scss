@@ -1,0 +1,104 @@
+.our-services {
+  padding-top: 10rem;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    li {
+      margin: 0 1.5rem;
+
+      span {
+        display: flex;
+        flex-direction: column;
+        width: 4.2rem;
+        height: 4.2rem;
+        overflow: hidden;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .active .img1 {
+    margin-top: -4.2rem;
+  }
+  img {
+    width: 4.2rem;
+    transition: all 0.3s linear;
+  }
+  .img2 {
+    opacity: 1;
+  }
+  ul li span:hover .img1 {
+    margin-top: -4.2rem;
+  }
+}
+.service-section {
+  display: flex;
+  overflow: hidden;
+}
+.service-container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  // align-items: center;
+  gap: 2rem;
+  min-width: 100vw;
+  padding: 3rem 15rem;
+  transition: all 1s ease-in-out;
+
+  h2 {
+    color: $blue;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 1rem 0;
+  }
+  p {
+    color: #666;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+
+  img {
+    perspective: 3000px;
+    -webkit-perspective: 3000px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transform: perspective(1000px) rotateY(-45deg) rotateX(23deg) scale(0.8);
+    transform-style: preserve-3d;
+    perspective-origin: center;
+    transition: all 0.4s linear;
+    -webkit-transform: perspective(1000px) rotateY(-45deg) rotateX(23deg)
+      scale(0.8);
+    -webkit-transform-style: preserve-3d;
+    -webkit-perspective-origin: center;
+    -webkit-transition: all 0.4s linear;
+    box-shadow: 5px 5px 11px #888;
+    animation: rotate 1s linear;
+    -webkit-animation: rotate 1s linear;
+  }
+  img:hover {
+    transform: rotateY(0) rotateX(0) scale(1);
+    -webkit-transform: rotateY(0) rotateX(0) scale(1);
+  }
+  @keyframes rotate {
+    from {
+      transform: perspective(1000px) translateY(100px) rotateY(0) rotateX(0)
+        scale(1);
+      perspective-origin: center;
+      -webkit-transform: perspective(1000px) translateY(100px) rotateY(0)
+        rotateX(0) scale(1);
+      -webkit-perspective-origin: center;
+    }
+    to {
+      transform: perspective(1000px) translateY(0) rotateY(-45deg)
+        rotateX(23deg) scale(0.8);
+      perspective-origin: center;
+      -webkit-transform: perspective(1000px) translateY(0) rotateY(-45deg)
+        rotateX(23deg) scale(0.8);
+      -webkit-perspective-origin: center;
+    }
+  }
+}
